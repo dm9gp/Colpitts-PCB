@@ -9,7 +9,7 @@ it is a great tool to grasp the concept and fun soldering project.
 
 To make the Oscillator you will need a Breadboard or to print the PCB or have the PCB printed for you.
 The PCB file is in Fritzing format .fzz.
-You can open open it in "Fritzing" (https://fritzing.org/) to first CHECK it, modify it as you wish
+You can open it in "Fritzing" (https://fritzing.org/) to first CHECK it, modify it as you wish
 and even have it printed by a PCB printing service of your choice such as AISLER (https://aisler.net/).
 
 You will also need the componets listed below.
