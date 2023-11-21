@@ -35,7 +35,7 @@ You will need ONLY ONE SMA Antenna Connector as shown in the Schematics and Brea
 	Colpitts_Bread Board.jpg
 	Colpitts_schematic.jpg
 
-The reason you will find two in the .fzz Schmatics or in the Breadboard 
+The reason you will find two in the .fzz Schmatics and Breadboard 
 is because in order to make the PCB double sided to accept the SMA to be soldered on both sides, two had to be inluded.
 
 By calculation, the Tank Circuit with following values oscillates at a frequency within the HAM Radio 80m Band.:
