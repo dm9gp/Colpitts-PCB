@@ -14,20 +14,20 @@ and even have it printed by a PCB printing service of your choice such as AISLER
 
 You will also need the componets listed below.
 	
-	C1 	Ceramic Capacitor 	      3.3nF
-	C2 	Ceramic Capacitor 	      680pF
-	C3 	Ceramic Capacitor 	      220pF
-	C4 	Variable Capacitor		0pF- 100pF
-	C5 	Ceramic Capacitor		1µF
-	C6 	Ceramic Capacitor		1µF
-	L1 	Inductor			3.3 µH
-	R1 	Resistor			100kΩ 
-	R2 	Resistor		        100kΩ 
-	R3 	Resistor		        47kΩ
-	R4 	Resistor		        2kΩ 
- 	Q1 	NPN-Transistor		        BC547 or 2N3904
-  	GND&SIG Generic male header 		2 pins 	pin spacing 0.1in (2.54mm)
- 	+9V	Screw terminal		        2 pins 	pin spacing 0.2in (5.08mm)
+	C1 	Ceramic Capacitor	3.3nF
+	C2 	Ceramic Capacitor	680pF
+	C3 	Ceramic Capacitor	220pF
+	C4 	Variable Capacitor	0pF- 100pF
+	C5 	Ceramic Capacitor	1µF
+	C6 	Ceramic Capacitor	1µF
+	L1 	Inductor		3.3 µH
+	R1 	Resistor		100kΩ 
+	R2 	Resistor		100kΩ 
+	R3 	Resistor		47kΩ
+	R4 	Resistor		2kΩ 
+ 	Q1 	NPN-Transistor		BC547 or 2N3904
+  	GND&SIG Generic male header	2 pins 	pin spacing 0.1in (2.54mm)
+ 	+9V	Screw terminal		2 pins 	pin spacing 0.2in (5.08mm)
 	SMA 	SMA Antenna Connector
 
 Notes on Parts:
