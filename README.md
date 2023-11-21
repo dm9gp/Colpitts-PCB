@@ -42,6 +42,7 @@ By calculation, the Tank Circuit with following values oscillates at a frequency
 		L = 3.3 µH 
 		C = 560 pF
 		fRes = 3.702 MHz
+
 C1 and C2 should make for the oscillation around 3.700 MHz but didn't in my first tests I measured a frequency too close to 3.800 MHz, 
 thats the Upper band edge in Europe for the 80m HAM Radio Band, so it is not allowed and hence not of use to build a Transmitter for experimental use.
 
