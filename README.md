@@ -43,16 +43,16 @@ By calculation, the Tank Circuit with following values oscillates at a frequency
 		C = 560 pF
 		fRes = 3.702 MHz
 
-C1 and C2 should make for the oscillation around 3.700 MHz but didn't in my first tests I measured a frequency too close to 3.800 MHz, 
-thats the Upper band edge in Europe for the 80m HAM Radio Band, so it is not allowed and hence not of use to build a Transmitter for experimental use.
+C1 and C2 should make for the oscillation around 3.700 MHz when L1 is .3 µH but didn't in my first tests I measured a frequency too close to 3.800 MHz, 
+that is the Upper band edge in Europe for the 80m HAM Radio Band, so it is not allowed and hence not of use to build a Transmitter for experimental use.
 
-I found by measuring the my Ceramic Capacitors that they tend in general to have LESS capacitance than their label says.
+I found by measuring my Ceramic Capacitors that they tend in general to have LESS capacitance than their label says.
 Hence C3. With C3 I got a nice sine wave @ 3.740 MHz, in the 80m HAM Radio Band, but just.
-So I left space to add C4 than can be Variable Capacitor for more precision and compliance to transmission rules.
+So I left space to add C4 that can be Variable Capacitor for more precision and compliance to transmission rules.
 
 With this board design one is not limited to the frequency given here.
 By varying the values of L1 and C1 and combined value of C2+C3+C4,
-other frequencies can be indeed obtained with changing other components.
+other frequencies can be indeed obtained without changing other components.
 It is best practice that C1 and C2(...) are in a ratio of 1:10 or 3:10.
 
 I tested the board @ 12V for a brief period of time.
