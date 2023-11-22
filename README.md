@@ -57,10 +57,12 @@ By varying the values of L1 and C1 and combined value of C2+C3+C4,
 other frequencies can be indeed obtained without changing other components.
 It is best practice that C1 and C2+Cn are in a ratio of 1:10 or 3:10.
 
+
 POWER:
 
 I run the board at 9V.
 I tested the board @ 12V for a brief period of time.
+
 
 
 USEFUL RESOUCES:
@@ -73,6 +75,7 @@ https://www.omnicalculator.com/physics/capacitors-in-series
 
 Capacitor uF - nF - pF Conversion Chart
 https://de.farnell.com/en-DE/uf-nf-pf-capacitor-conversion-table
+
 
 
 COMPONETS KITS:
@@ -89,10 +92,14 @@ HUAREW 10 Values 300 Pieces Ceramic Capacitor 0.1 0.15 0.22 0.33 0.47 0.68 1 2.2
 
 Heevhas 60 Pieces 5.08 mm 2 Pin & 3 Pin PCB Screw Terminal Block Solderable Connector 300 V 16 A for Arduino DIY Project (50 x 2 Pin, 10 x 3 Pin) 
 
+
+
 HOUSING:
 
 The PCB is designed to be housed in a
 "Circuit Board Instrument Aluminium Cool Box 40 x 50 x 80 mm DIY Electronic Project Housing".
+
+
 
 WARNING and DISCLAIMER: 
 
@@ -102,6 +109,8 @@ unless your local regulations make exceptions such as:
 	working under guidance of a licenced HAM Radio Operator.
 Please don`t attach an Antenna to it unless you know what you are doing, thank you.
 Will require a filter.
+
+
 
 LiCENSE:
 
