@@ -1,5 +1,5 @@
 # Colpitts-PCB
-PCB for a Colpitts done in Fritzing
+PCB for a Colpitts Oscillator. Open in Fritzing to view the schematics, inspect or modifiy the circuit. 
 
 There are more practical oscillators available today, if for example your are looking to make a radio transmitter.
 Nevertheless, the Colpitts Oscillator, here in common base configuration, works and produces a nice sine wave.
