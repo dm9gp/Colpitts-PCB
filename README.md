@@ -31,7 +31,8 @@ You will also need the componets listed below.
  	+9V	Screw terminal		2 pins 	pin spacing 0.2in (5.08mm)
 	SMA 	SMA Antenna Connector
 
-Notes on Parts:
+NOTES ON PARTS:
+
 You will need ONLY ONE SMA Antenna Connector as shown in the Schematics and Breadboard diagrams in these files:
 	Colpitts_Bread Board.jpg
 	Colpitts_schematic.jpg
@@ -56,10 +57,14 @@ By varying the values of L1 and C1 and combined value of C2+C3+C4,
 other frequencies can be indeed obtained without changing other components.
 It is best practice that C1 and C2+Cn are in a ratio of 1:10 or 3:10.
 
+POWER:
+
+I run the board at 9V.
 I tested the board @ 12V for a brief period of time.
 
 
 USEFUL RESOUCES:
+
 Resonant Frequency Calculator
 https://www.1728.org/resfreq.htm
 
@@ -71,6 +76,7 @@ https://de.farnell.com/en-DE/uf-nf-pf-capacitor-conversion-table
 
 
 COMPONETS KITS:
+
 80pcs 6 mm trimmer capacitor variable capacity ceramic electronic capacitor kit 5/10/20/30/40/60/70/120P 
 
 BOJACK 20 Values 200 Pieces Inductors 1 uH to 4.7 mH 0.5 W Colour Ring Inductors 1/2 Watt Assortment Kit 
@@ -84,16 +90,20 @@ HUAREW 10 Values 300 Pieces Ceramic Capacitor 0.1 0.15 0.22 0.33 0.47 0.68 1 2.2
 Heevhas 60 Pieces 5.08 mm 2 Pin & 3 Pin PCB Screw Terminal Block Solderable Connector 300 V 16 A for Arduino DIY Project (50 x 2 Pin, 10 x 3 Pin) 
 
 HOUSING:
+
 The PCB is designed to be housed in a
 "Circuit Board Instrument Aluminium Cool Box 40 x 50 x 80 mm DIY Electronic Project Housing".
 
 WARNING and DISCLAIMER: 
+
 You may need a HAM Radio licence to operate this oscillator in your country 
 unless your local regulations make exceptions such as: 
 	for the very low power emitted;
 	working under guidance of a licenced HAM Radio Operator.
 Please don`t attach an Antenna to it unless you know what you are doing, thank you.
 Will require a filter.
+
+LiCENSE:
 
 This work is dedicated to the public domain.
 
