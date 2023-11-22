@@ -67,18 +67,15 @@ I tested the board @ 12V for a brief period of time.
 
 USEFUL RESOUCES:
 
-	Resonant Frequency Calculator
-	https://www.1728.org/resfreq.htm
+	Resonant Frequency Calculator (https://www.1728.org/resfreq.htm)
 
-	Capacitors in Series Calculator
-	https://www.omnicalculator.com/physics/capacitors-in-series
+	Capacitors in Series Calculator (https://www.omnicalculator.com/physics/capacitors-in-series)
 
-	Capacitor uF - nF - pF Conversion Chart
-	https://de.farnell.com/en-DE/uf-nf-pf-capacitor-conversion-table
+	Capacitor uF - nF - pF Conversion Chart (https://de.farnell.com/en-DE/uf-nf-pf-capacitor-conversion-table)
 
 
 
-COMPONETS KITS:
+COMPONETS KITS EXAMPLES:
 
 	80pcs 6 mm trimmer capacitor variable capacity ceramic electronic capacitor kit 5/10/20/30/40/60/70/120P 
 
