@@ -109,7 +109,7 @@ Will require a filter.
 
 
 
-LiCENSE:
+LICENSE:
 
 This work is dedicated to the public domain.
 
