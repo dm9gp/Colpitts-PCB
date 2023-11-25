@@ -18,7 +18,7 @@ You will also need the componets listed below.
 	C1 	Ceramic Capacitor	3.3nF
 	C2 	Ceramic Capacitor	680pF
 	C3 	Ceramic Capacitor	220pF
-	C4 	Variable Capacitor	0pF- 100pF
+	C4 	Variable Capacitor	0pF- 120pF
 	C5 	Ceramic Capacitor	1µF
 	C6 	Ceramic Capacitor	1µF
 	L1 	Inductor		3.3 µH
@@ -51,6 +51,7 @@ that is the Upper band edge in Europe for the 80m HAM Radio Band, so it is not a
 I found by measuring my Ceramic Capacitors that they tend in general to have LESS capacitance than their label says.
 Hence C3. With C3 I got a nice sine wave @ 3.740 MHz, in the 80m HAM Radio Band, but just.
 So I left space to add C4 that can be Variable Capacitor for more precision and compliance to transmission rules.
+With C4 I could tune the signal between 3.63 MHz and 3.70 Mhz which is well withinin the HAM Radio 80m Band for all modes. 
 
 With this board design one is not limited to the frequency given here.
 By varying the values of L1 and C1 and combined value of C2+C3+C4,
