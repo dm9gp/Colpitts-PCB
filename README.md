@@ -45,8 +45,8 @@ By calculation, the Tank Circuit with the following values oscillates at a frequ
 		C = 560 pF
 		fRes = 3.702 MHz
 
-C1 and C2 should make for the oscillation around 3.700 MHz when L1 is .3 µH but didn't in my first tests. I measured a frequency too close to 3.800 MHz, 
-that is the Upper band edge in Europe for the 80m HAM Radio Band, so it is not allowed and hence not of use to build a Transmitter for experimental use.
+C1 and C2 should make for the oscillation around 3.700 MHz when L1 is 3.3 µH but didn't in my first tests. I measured a frequency too close to 3.800 MHz, 
+that is the Upper band edge in Europe for the 80m HAM Radio Band, so it is not allowed and hence not of use to build a Transmitter for experimental use in Europe.
 
 I found by measuring my Ceramic Capacitors that they tend in general to have LESS capacitance than their label says.
 Hence C3. With C3 I got a nice sine wave @ 3.740 MHz, in the 80m HAM Radio Band, but just.
