@@ -25,7 +25,7 @@ You will also need the componets listed below.
 	R1 	Resistor		100kΩ 
 	R2 	Resistor		100kΩ 
 	R3 	Resistor		47kΩ
-	R4 	Resistor		2kΩ 
+	R4 	Resistor		2kΩ (or 2.1kΩ)
  	Q1 	NPN-Transistor		BC547 or 2N3904
   	GND&SIG Generic male header	2 pins 	pin spacing 0.1in (2.54mm)
  	+9V	Screw terminal		2 pins 	pin spacing 0.2in (5.08mm)
