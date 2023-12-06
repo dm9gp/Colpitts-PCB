@@ -130,6 +130,7 @@ unless your local regulations make exceptions such as:
 	working under guidance of a licenced HAM Radio Operator.
 Please don`t attach an Antenna to it unless you know what you are doing, thank you.
 Will require a filter.
+It is an electronics project that requires power, handle accordingly.
 
 
 
