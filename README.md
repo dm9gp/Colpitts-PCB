@@ -66,6 +66,8 @@ I found 200kΩ harder to get hold of;
 the board allows flexibilty to play with different values for the voltage divider;
 for example a total value for R1+R2 of 15kΩ with R3 5.6kΩ should work too.
 
+Although I find the frequency to stable, per its nature this Oscillator is susceptible to frequency variations due to ambient temperature changes and heating up.
+Hook it up to an Oscilloscope or Frequncy Counter and try warming the Inductor L1 (gently) to see what happens.
 
 POWER:
 
