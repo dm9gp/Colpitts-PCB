@@ -19,7 +19,7 @@ You will also need the componets listed below.
 	C2 	Ceramic Capacitor	680pF
 	C3 	Ceramic Capacitor	220pF
 	C4 	Variable Capacitor	0pF- 120pF or 100pF
- 	C5 	Variable Capacitor	0pF- 120pF or 100pF
+ 	C5 	Variable Capacitor	0pF- 120pF
 	C6 	Ceramic Capacitor	1µF
 	C7 	Ceramic Capacitor	1µF
 	L1 	Inductor		3.3 µH
