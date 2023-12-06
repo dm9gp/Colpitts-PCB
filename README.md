@@ -9,7 +9,7 @@ it is a great tool to grasp the concept of a tank circuit and a fun soldering pr
 Inspect one with an Oscilloscope for example.
 
 To make the Oscillator you will need a Breadboard or to print the PCB or have the PCB printed for you.
-The PCB file is in "Fritzing" format .fzz.
+The PCB file is in "Fritzing" format .fzz. The latest has the more recent date in its name.
 You can open it in "Fritzing" (https://fritzing.org/) to first check it, modify it as you wish
 and even have it printed by a PCB printing service of your choice such as AISLER (https://aisler.net/).
 
