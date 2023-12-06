@@ -19,8 +19,9 @@ You will also need the componets listed below.
 	C2 	Ceramic Capacitor	680pF
 	C3 	Ceramic Capacitor	220pF
 	C4 	Variable Capacitor	0pF- 120pF or 100pF
-	C5 	Ceramic Capacitor	1µF
+ 	C5 	Variable Capacitor	0pF- 120pF or 100pF
 	C6 	Ceramic Capacitor	1µF
+	C7 	Ceramic Capacitor	1µF
 	L1 	Inductor		3.3 µH
 	R1 	Resistor		100kΩ 
 	R2 	Resistor		100kΩ 
@@ -50,16 +51,16 @@ that is the Upper band edge in Europe for the 80m HAM Radio Band, so it is not a
 
 I found by measuring my Ceramic Capacitors that they tend in general to have LESS capacitance than their label says.
 Hence I added C3 220pF. With C3 I got a nice sine wave @ 3.740 MHz, in the 80m HAM Radio Band, but just.
-So I left space to add C4 that can be Variable Capacitor for more precision and compliance to transmission rules.
+So I left space to add C4 and C5 that can be Variable Capacitors for more precision and compliance to transmission rules.
 With C4 Variable Capacitor 0pF- 120pF I could tune the signal between 3.63 MHz and 3.70 Mhz which is well withinin the HAM Radio 80m Band for all modes. 
 With C4 100pF I measure 3.63 MHz fixed frequency, these parts have tolerance.
 
 With this board design one is not limited to the frequency given here.
-By varying the values of L1 and C1 and combined value of C2+C3+C4,
+By varying the values of L1 and C1 and combined value of C2+C3+C4+C5,
 other frequencies can be indeed obtained without changing other components.
 It is best practice that C1 and C2+Cn are in a ratio of 1:10 or 3:10.
 
-I used for R1 100kΩ and R2 100kΩ but they could be substituted with a 200kΩ, just because 
+I used for R1 100kΩ and R2 100kΩ but they could be substituted with a 200kΩ Resistor, just because 
 I found 200kΩ harder to get hold of;
 the board allows flexibilty to play with different values for the voltage divider;
 for example a total value for R1+R2 of 15kΩ with R3 5.6kΩ should work too.
