@@ -61,6 +61,12 @@ By varying the values of L1 and C1 and combined value of C2+C3+C4+C5,
 other frequencies can be indeed obtained without changing other components.
 It is best practice that C1 and C2+Cn are in a ratio of 1:10 or 3:10.
 
+C6 removes the DC component of the output of the curcuit, after C6 the wave oscillates with values higher and lower around the 0V line on the oscilliscope, 
+before C6 the same sine wave oscillates around a value that is below or above the 0V line, it is DC offset.
+
+Without C7 the oscillator does not work. I tested values higher than 1µF, these did not change the shape of the sine wave.
+I got the best results in terms of shape of curve with values between 20pF and 100pF. 
+
 I used for R1 100kΩ and R2 100kΩ but they could be substituted with a 200kΩ Resistor;
 the board allows flexibilty to play with different values for the voltage divider;
 for example a total value for R1+R2 of 15kΩ with R3 5.6kΩ should work too with an R4 of 68Ω.
@@ -73,7 +79,9 @@ I tested with:
  
 	R1+R2	15.6kΩ
 	R3	5.6kΩ
-	R4 	68Ω
+	R4 	30Ω
+ 	C7	20pF
+	Gain of 1  
  
 	R1+R2	18kΩ
 	R3	4.7kΩ
@@ -124,14 +132,14 @@ The PCB is designed to be housed in a
 
 THE CIRCUIT:
 
-The oscillation frequency is given by L1 and C1 and C2 that make up the tank circuit.
-C3 and C4 allow to add more capacitance as the compenents have tolerance and the resulting capacity may fall short of the calcaluted value.
+The oscillation frequency is given by L1 and C1+C2 that make up the tank circuit.
+C3 and C4 allow to add more capacitance to C2 because the compenents have tolerance and the resulting capacity may fall short of the calcaluted value.
 A best practice is to have the values of C1 and in C2 in ratio of 1:10 up to 3:10.
-R1+R2 and R3 are the voltage divider, to ensure sufficient voltage difference between the transistor's base and emitter.
-The role of R4 is to ensure a nice sine wave. A too low value can result in flattened peaks or troughs.
-C5 maintains the voltage value seen at the base of the transistor.
 C6 is the decoupling capacitor, after C6 the sine wave oscillates above and below the 0V value,
 C6 filters the DC out, we have our signal.
+C7 maintains the voltage value seen at the base of the transistor.
+R1+R2 and R3 are the voltage divider, to ensure sufficient voltage difference between the transistor's base and emitter.
+The role of R4 is to control the amplifiers voltage gain.
 
 
 WARNING and DISCLAIMER: 
