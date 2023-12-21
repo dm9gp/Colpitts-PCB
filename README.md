@@ -22,12 +22,12 @@ You will also need the componets listed below.
 	C4 	Variable Capacitor	0pF- 120pF or Ceramic Capacitor 100pF
  	C5 	Variable Capacitor	0pF- 120pF or leave it empty
 	C6 	Ceramic Capacitor	1µF
-	C7 	Ceramic Capacitor	1µF
+	C7 	Ceramic Capacitor	30pF
 	L1 	Inductor		3.3 µH
 	R1 	Resistor		100kΩ 
 	R2 	Resistor		100kΩ 
 	R3 	Resistor		47kΩ
-	R4 	Resistor		2kΩ (or 2.1kΩ)
+	R4 	Resistor		1kΩ
  	Q1 	NPN-Transistor		BC547 or 2N3904
   	GND&SIG Generic male header	2 pins 	pin spacing 0.1in (2.54mm)
  	+9V	Screw terminal		2 pins 	pin spacing 0.2in (5.08mm)
@@ -56,7 +56,7 @@ So I left space to add C4 and C5 that can be Variable Capacitors for more precis
 With C4 Variable Capacitor 0pF- 120pF I could tune the signal between 3.63 MHz and 3.70 Mhz which is well withinin the HAM Radio 80m Band for all modes. 
 With C4 100pF I measure 3.63 MHz fixed frequency, these parts have tolerance.
 
-With this board design one is not limited to the frequency given here.
+With this board design one is not limited to the frequency calculated above.
 By varying the values of L1 and C1 and combined value of C2+C3+C4+C5,
 other frequencies can be indeed obtained without changing other components.
 It is best practice that C1 and C2+Cn are in a ratio of 1:10 or 3:10.
@@ -65,7 +65,7 @@ C6 removes the DC component of the output of the curcuit, after C6 the wave osci
 before C6 the same sine wave oscillates around a value that is below or above the 0V line, it is DC offset.
 
 Without C7 the oscillator does not work. I tested values higher than 1µF, these did not change the shape of the sine wave.
-I got the best results in terms of shape of curve with values between 20pF and 100pF. 
+I got the best results in terms of waveform with values in some cases down to between 20pF and 100pF. 
 
 I used for R1 100kΩ and R2 100kΩ but they could be substituted with a 200kΩ Resistor;
 the board allows flexibilty to play with different values for the voltage divider;
@@ -76,17 +76,54 @@ Some exaple tests:
 	INPUT	9V
 	R1+R2	200kΩ
 	R3	47kΩ
-	R4 	2kΩ
+	R4 	1kΩ
  	C7	1µF
-	Vout	2V  Peak-to-peak
+	Vout	4V  Peak-to-peak
 
- 	INPUT	12V
+	This combination is giving me the purest waveform:
+ 	INPUT	9V		
+	R1+R2	200kΩ
+	R3	47kΩ
+	R4 	1kΩ
+ 	C7	30pF
+	Vout	3V  Peak-to-peak
+
+	INPUT	9V
 	R1+R2	200kΩ
 	R3	47kΩ
 	R4 	2kΩ
  	C7	1µF
+	Vout	2V  Peak-to-peak
+
+ 	INPUT	9V
+	R1+R2	200kΩ
+	R3	47kΩ
+	R4 	3kΩ
+ 	C7	1µF
+	Vout	1.8V  Peak-to-peak
+
+  	INPUT	9V
+	R1+R2	200kΩ
+	R3	47kΩ
+	R4 	290Ω
+ 	C7	1µF
+	Vout	9V  Peak-to-peak
+
+ 	INPUT	9V
+	R1+R2	200kΩ
+	R3	47kΩ
+	R4 	290Ω
+ 	C7	20pF
+	Vout	5V  Peak-to-peak
+
+ 	INPUT	12V
+	R1+R2	200kΩ
+	R3	47kΩ
+	R4 	2.9kΩ
+ 	C7	1µF
 	Vout	3V  Peak-to-peak
 
+	
 	With an 100Ω Potentiometer at R4 and got:
 
  	INPUT	9V
@@ -110,20 +147,23 @@ Some exaple tests:
  	C7	20pF
 	Vout	8V  Peak-to-peak
 
-
+	Try your own test perhaps? What values you obtain with the following?
 
 	R1+R2	18kΩ
 	R3	4.7kΩ
 	R4 	100Ω
+	Which value for C7 gives you the best waveform? 
+  
  
  
-Although I find the frequency to stable, per their nature, Oscillators are susceptible to frequency variations due to ambient temperature changes and heating up.
-Hook this one up to an Oscilloscope or Frequncy Counter and try warming the Inductor L1 (gently) to see what happens.
+Although I find the frequency to be stable, per their nature, Oscillators are susceptible to variations due to ambient temperature changes and heating up.
+When I touch the inductor, the amplitude of the wave increments a little.
+Hook it up to an Oscilloscope or Frequncy Counter and try warming the Inductor L1 (gently) to see what happens.
 
 POWER:
 
 I run the board at 9V.
-I tested the board @ 12V for a brief period of time.
+I tested the board @ 12V too.
 
 
 
@@ -162,7 +202,7 @@ The PCB is designed to be housed in a
 THE CIRCUIT:
 
 The oscillation frequency is given by L1 and C1+C2 that make up the tank circuit.
-C3 and C4 allow to add more capacitance to C2 because the compenents have tolerance and the resulting capacity may fall short of the calcaluted value.
+C3 and C4 allow to add more capacitance to be added to C2 because the compenents have tolerance and the resulting capacity may fall short of the calcaluted value.
 A best practice is to have the values of C1 and in C2 in ratio of 1:10 up to 3:10.
 C6 is the decoupling capacitor, after C6 the sine wave oscillates above and below the 0V value,
 C6 filters the DC out, we have our signal.
@@ -177,7 +217,7 @@ You may need a HAM Radio licence to operate this oscillator in your country
 unless your local regulations make exceptions such as: 
 	for the very low power emitted;
 	working under guidance of a licenced HAM Radio Operator.
-Please don`t attach an Antenna to it unless you know what you are doing, thank you.
+Please don't attach an Antenna to it unless you know what you are doing, thank you.
 Will require a filter.
 It is an electronics project that requires power, handle accordingly.
 
