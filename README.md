@@ -204,7 +204,8 @@ THE CIRCUIT:
 The oscillation frequency is given by L1 and C1+C2 that make up the tank circuit.
 C3 and C4 allow to add more capacitance to be added to C2 because the compenents have tolerance and the resulting capacity may fall short of the calcaluted value.
 A best practice is to have the values of C1 and in C2 in ratio of 1:10 up to 3:10.
-C6 is the decoupling capacitor, after C6 the sine wave oscillates above and below the 0V value,
+C6 is the coupling capacitor, it blocks the DC signal and only passes the AC signal:
+after C6 the sine wave oscillates above and below the 0V value, rather than around a particular voltage value,
 C6 filters the DC out, we have our signal.
 C7 maintains the voltage value seen at the base of the transistor.
 R1+R2 and R3 are the voltage divider, to ensure sufficient voltage difference between the transistor's base and emitter.
