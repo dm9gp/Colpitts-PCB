@@ -71,18 +71,47 @@ I used for R1 100kΩ and R2 100kΩ but they could be substituted with a 200kΩ R
 the board allows flexibilty to play with different values for the voltage divider;
 for example a total value for R1+R2 of 15kΩ with R3 5.6kΩ should work too with an R4 of 68Ω.
 
-I tested with:
+Some exaple tests:
 
+	INPUT	9V
 	R1+R2	200kΩ
 	R3	47kΩ
 	R4 	2kΩ
- 
+ 	C7	1µF
+	Vout	2V  Peak-to-peak
+
+ 	INPUT	12V
+	R1+R2	200kΩ
+	R3	47kΩ
+	R4 	2kΩ
+ 	C7	1µF
+	Vout	3V  Peak-to-peak
+
+	With an 100Ω Potentiometer at R4 and got:
+
+ 	INPUT	9V
 	R1+R2	15.6kΩ
 	R3	5.6kΩ
 	R4 	30Ω
  	C7	20pF
-	Gain of 1  
- 
+	Vout	9V  Peak-to-peak
+ 	
+  	INPUT	9V
+	R1+R2	15.6kΩ
+	R3	5.6kΩ
+	R4 	40Ω
+ 	C7	20pF
+	Vout	12V  Peak-to-peak
+
+	INPUT	12V
+	R1+R2	15.6kΩ
+	R3	5.6kΩ
+	R4 	40Ω
+ 	C7	20pF
+	Vout	8V  Peak-to-peak
+
+
+
 	R1+R2	18kΩ
 	R3	4.7kΩ
 	R4 	100Ω
