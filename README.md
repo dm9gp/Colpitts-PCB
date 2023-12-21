@@ -61,7 +61,7 @@ By varying the values of L1 and C1 and combined value of C2+C3+C4+C5,
 other frequencies can be indeed obtained without changing other components.
 It is best practice that C1 and C2+Cn are in a ratio of 1:10 or 3:10.
 
-C6 removes the DC component of the output of the curcuit, after C6 the wave oscillates with values higher and lower around the 0V line on the oscilliscope, 
+C6 removes the DC component at the output of the curcuit, after C6 the wave oscillates with values higher and lower around the 0V line on the oscilliscope, 
 before C6 the same sine wave oscillates around a value that is below or above the 0V line, it is DC offset.
 
 Without C7 the oscillator does not work. I tested values higher than 1µF, these did not change the shape of the sine wave.
