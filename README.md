@@ -63,8 +63,23 @@ It is best practice that C1 and C2+Cn are in a ratio of 1:10 or 3:10.
 
 I used for R1 100kΩ and R2 100kΩ but they could be substituted with a 200kΩ Resistor;
 the board allows flexibilty to play with different values for the voltage divider;
-for example a total value for R1+R2 of 15kΩ with R3 5.6kΩ should work too.
+for example a total value for R1+R2 of 15kΩ with R3 5.6kΩ should work too with an R4 of 68Ω.
 
+I tested with:
+
+	R1+R2	200kΩ
+	R3	47kΩ
+	R4 	2kΩ
+ 
+	R1+R2	15.6kΩ
+	R3	5.6kΩ
+	R4 	68Ω
+ 
+	R1+R2	18kΩ
+	R3	4.7kΩ
+	R4 	100Ω
+ 
+ 
 Although I find the frequency to stable, per their nature, Oscillators are susceptible to frequency variations due to ambient temperature changes and heating up.
 Hook this one up to an Oscilloscope or Frequncy Counter and try warming the Inductor L1 (gently) to see what happens.
 
