@@ -61,13 +61,12 @@ By varying the values of L1 and C1 and combined value of C2+C3+C4+C5,
 other frequencies can be indeed obtained without changing other components.
 It is best practice that C1 and C2+Cn are in a ratio of 1:10 or 3:10.
 
-I used for R1 100kΩ and R2 100kΩ but they could be substituted with a 200kΩ Resistor, just because 
-I found 200kΩ harder to get hold of;
+I used for R1 100kΩ and R2 100kΩ but they could be substituted with a 200kΩ Resistor;
 the board allows flexibilty to play with different values for the voltage divider;
 for example a total value for R1+R2 of 15kΩ with R3 5.6kΩ should work too.
 
-Although I find the frequency to stable, per its nature this Oscillator is susceptible to frequency variations due to ambient temperature changes and heating up.
-Hook it up to an Oscilloscope or Frequncy Counter and try warming the Inductor L1 (gently) to see what happens.
+Although I find the frequency to stable, per their nature, Oscillators are susceptible to frequency variations due to ambient temperature changes and heating up.
+Hook this one up to an Oscilloscope or Frequncy Counter and try warming the Inductor L1 (gently) to see what happens.
 
 POWER:
 
@@ -113,9 +112,7 @@ THE CIRCUIT:
 The oscillation frequency is given by L1 and C1 and C2 that make up the tank circuit.
 C3 and C4 allow to add more capacitance as the compenents have tolerance and the resulting capacity may fall short of the calcaluted value.
 A best practice is to have the values of C1 and in C2 in ratio of 1:10 up to 3:10.
-R1 and R2 and R3 are the voltage divider with the required voltage provided between R2 and R3, to ensure a voltage difference between the transistor's base and emitter 
-such that the sine wave from the tank circuit allows charge to flow between collector and emitter at the right time
-compensating for losses and effectivly keeping the oscillations up to their mean value.
+R1+R2 and R3 are the voltage divider, to ensure sufficient voltage difference between the transistor's base and emitter.
 The role of R4 is to ensure a nice sine wave. A too low value can result in flattened peaks or troughs.
 C5 maintains the voltage value seen at the base of the transistor.
 C6 is the decoupling capacitor, after C6 the sine wave oscillates above and below the 0V value,
