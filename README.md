@@ -19,8 +19,8 @@ You will also need the componets listed below.
 	C1 	Ceramic Capacitor	3.3nF
 	C2 	Ceramic Capacitor	680pF
 	C3 	Ceramic Capacitor	68pF to 220pF
-	C4 	Variable Capacitor	0pF-120pF variable optional
- 	C5 	Variable Capacitor	0pF-120pF variable optional
+	C4 	Variable Capacitor	0-120pF variable (optional)
+ 	C5 	Variable Capacitor	0-120pF variable (optional)
 	C6 	Ceramic Capacitor	1µF
 	C7 	Ceramic Capacitor	30pF
 	L1 	Inductor		3.3 µH
@@ -31,7 +31,7 @@ You will also need the componets listed below.
  	Q1 	NPN-Transistor		BC547 or 2N3904
   	GND&SIG Generic male header	2 pins 	pin spacing 0.1in (2.54mm)
  	+9V	Screw terminal		2 pins 	pin spacing 0.2in (5.08mm)
-	SMA 	SMA Antenna Connector	optional
+	SMA 	SMA Antenna Connector	(optional)
 
 NOTES ON BOARD AND CIRCUIT DESIGN:
 
@@ -50,16 +50,16 @@ By calculation, the Tank Circuit with the following values oscillates at a frequ
 C1 and C2 should make for the oscillation around 3.700 MHz when L1 is 3.3 µH but didn't in my first tests. I measured a frequency too close to 3.800 MHz, 
 that is the Upper band edge in Europe for the 80m HAM Radio Band, so it is not allowed and hence not of use to build a Transmitter for experimental use in Europe.
 
-By measuring my Ceramic Capacitors I found that they tend to have LESS capacitance than their label says.
-Hence I added C3 for additional capacitors.
+Measuring the Ceramic Capacitors I found that they tend to have LESS capacitance than their label says.
+Hence I added C3 for additional capacity.
 With C3 68pF I obtained a nice wave form at 3.7MHz. 
-With C3 220pF I got on a different board a nice sine wave @ 3.740 MHz, also in the 80m HAM Radio Band, but just.
-The componets used have tolerance.
+With C3 220pF I got on a different board a nice sine wave @ 3.740 MHz, also in the 80m HAM Radio Band, but just:
+the componets used have tolerance.
 
 I left space to add C4 and C5 that can be Variable Capacitors for more precision and compliance to transmission rules.
-With C4 Variable Capacitor 0pF- 120pF I could tune the signal between 3.63 MHz and 3.70 Mhz which is well withinin the HAM Radio 80m Band for all modes. 
+With C4 Variable Capacitor 0-120pF I could tune the signal between 3.63 MHz and 3.70 Mhz which is well withinin the HAM Radio 80m Band for all modes. 
 With C4 100pF I measure 3.63 MHz fixed frequency, again, these parts have tolerance.
-I found that adding variable capacitors decreases the amplitude of the signal even up to 1.5V less peak to peak, 
+I found that adding variable capacitors decreases the amplitude of the signal even up to 1.5V less peak-to-peak, 
 the variable capacitors dampen the signal.
 
 What worked best for me was testing C3 by inserting it on the PCB before soldering it to the board.
