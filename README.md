@@ -1,15 +1,20 @@
 # Colpitts-PCB
-PCB for a Colpitts Oscillator. Open in Fritzing to view the schematics, inspect or modifiy the circuit. 
+PCB for a Colpitts Oscillator in common base configuration. 
+
+Open in Fritzing to view the schematics, inspect or modifiy the circuit. 
 
 There are more practical oscillators available today, if for example your are looking to make a radio transmitter.
 Nevertheless, the Colpitts Oscillator, here in common base configuration, works and produces a nice sine wave.
 Because it can be built on a Breadboard or from the PCB 
 and because it can be made from components that are ready available,
 it is a great tool to grasp the concept of a tank circuit and a fun soldering project too.
-Inspect one with an Oscilloscope for example.
+Inspect one with an Oscilloscope too, for example.
 
-To make the Oscillator you will need 
-a Breadboard or to print the PCB file (in the latest version) or have the PCB printed for you,
+
+GET STARTED:
+
+To make the Oscillator you will need a Breadboard or 
+print the PCB file (in the latest version) or have the PCB printed for you,
 the PCB file is in "Fritzing" format .fzz.
 You can open it in "Fritzing" (https://fritzing.org/) to first check it, modify it 
 and then have it printed by a PCB printing service of your choice such as AISLER (https://aisler.net/) if you wish.
@@ -33,14 +38,15 @@ You will also need the componets listed below.
  	+9V	Screw terminal		2 pins 	pin spacing 0.2in (5.08mm)
 	SMA 	SMA Antenna Connector	(optional)
 
-NOTES ON BOARD AND CIRCUIT DESIGN:
+
+BOARD AND CIRCUIT DESIGN:
 
 You will need ONLY ONE SMA Antenna Connector as shown in the Schematics and Breadboard diagrams in these files:
 	Colpitts_Bread Board.jpg
 	Colpitts_schematic.jpg
 
 The reason you will find two SMA connectors in the .fzz Schematics and Breadboard 
-is because the PCB is made double sided and to accept the SMA to be soldered on both sides, so two had to be inluded in the drawing.
+is because the PCB is made double sided, to accept the SMA to be soldered on both sides, two had to be inluded in the drawing.
 
 By calculation, the Tank Circuit with the following values oscillates at a frequency within the HAM Radio 80m Band.:
 		L = 3.3 µH 
@@ -64,16 +70,64 @@ the variable capacitors dampen the signal.
 
 What worked best for me was testing C3 by inserting it on the PCB before soldering it to the board.
 
-With this board design one is not limited to the frequency calculated above.
+With this board design one is not limited to a frequency in the 80m Band.
 By varying the values of L1 and C1 and combined value of C2+C3+C4+C5,
 other frequencies can be indeed obtained without changing other components.
 It is best practice that C1 and C2+Cn are in a ratio of 1:10 or 3:10.
 
-C6 removes the DC component at the output of the curcuit, after C6 the wave oscillates with values higher and lower around the 0V line on the oscilliscope, 
-before C6 the same sine wave oscillates around a value that is below or above the 0V line, it is DC offset.
 
+
+COMPONETS KITS EXAMPLES:
+
+	80pcs 6 mm trimmer capacitor variable capacity ceramic electronic capacitor kit 5/10/20/30/40/60/70/120P 
+
+	BOJACK 20 Values 200 Pieces Inductors 1 uH to 4.7 mH 0.5 W Colour Ring Inductors 1/2 Watt Assortment Kit 
+
+	AUKENIEN 24 Value 600 Piece Ceramic Capacitor Set Capacitors Assortment from 10pF to 100nF Ceramic Capacitor Kit 
+
+	BOJACK 600-Piece 15 Value Ceramic Capacitor Kit (10 pF, 20 pF, 30 pF, 47 pF, 56 pF, 68 pF, 100 pF, 220 pF, 330 pF, 680 pF, 1 nF, 4.7 nF, 10 nF, 47 nF, 100 nF) 
+
+	HUAREW 10 Values 300 Pieces Ceramic Capacitor 0.1 0.15 0.22 0.33 0.47 0.68 1 2.2 4.7 10 uF / 100-10000 nF Classification Kit 
+
+	Heevhas 60 Pieces 5.08 mm 2 Pin & 3 Pin PCB Screw Terminal Block Solderable Connector 300 V 16 A for Arduino DIY Project (50 x 2 Pin, 10 x 3 Pin) 
+
+
+
+HOUSING:
+
+The PCB is designed to be housed in a
+"Circuit Board Instrument Aluminium Cool Box 40 x 50 x 80 mm DIY Electronic Project Housing".
+
+
+POWER:
+
+I run the board at 9V.
+I tested the board @ 12V too.
+
+
+
+THE CIRCUIT:
+
+The oscillation frequency is given by L1 and C1+C2 that make up the tank circuit.
+C3 and C4 allow to add more capacitance to be added to C2 because the compenents have tolerance and the resulting capacity may fall short of the calcaluted value.
+A best practice is to have the values of C1 and in C2 in ratio of 1:10 up to 3:10.
+C6 is the coupling capacitor, it blocks the DC signal and only passes the AC signal:
+after C6 the sine wave oscillates above and below the 0V value, rather than around a particular voltage value,
+C6 filters the DC out, we have our signal. It removes the DC component at the output of the curcuit, after C6 the wave oscillates with values higher and lower around the 0V line on the oscilliscope, 
+before C6 the same sine wave oscillates around a value that is below or above the 0V line, it is DC offset.
+C7 maintains the voltage value seen at the base of the transistor.
 Without C7 the oscillator does not work. I tested values higher than 1µF, these did not change the shape of the sine wave.
 I got the best results in terms of waveform with values in some cases down to between 20pF and 100pF. 
+R1+R2 and R3 are the voltage divider, to ensure sufficient voltage difference between the transistor's base and emitter.
+The role of R4 is to control the amplifiers voltage gain.
+
+Although I find the frequency to be stable, per their nature, Oscillators are susceptible to variations due to ambient temperature changes and heating up.
+When I touch the inductor, the amplitude of the wave increments a little.
+Hook it up to an Oscilloscope or Frequncy Counter and try warming the Inductor L1 (gently) to see what happens.
+
+
+
+THE VOLTAGE DIVIDER:
 
 I used for R1 100kΩ and R2 100kΩ but they could be substituted with a 200kΩ Resistor;
 the board allows flexibilty to play with different values for the voltage divider;
@@ -164,17 +218,6 @@ Some exaple tests:
   
  
  
-Although I find the frequency to be stable, per their nature, Oscillators are susceptible to variations due to ambient temperature changes and heating up.
-When I touch the inductor, the amplitude of the wave increments a little.
-Hook it up to an Oscilloscope or Frequncy Counter and try warming the Inductor L1 (gently) to see what happens.
-
-POWER:
-
-I run the board at 9V.
-I tested the board @ 12V too.
-
-
-
 USEFUL RESOUCES:
 
 	Resonant Frequency Calculator (https://www.1728.org/resfreq.htm)
@@ -183,41 +226,6 @@ USEFUL RESOUCES:
 
 	Capacitor uF - nF - pF Conversion Chart (https://de.farnell.com/en-DE/uf-nf-pf-capacitor-conversion-table)
 
-
-
-COMPONETS KITS EXAMPLES:
-
-	80pcs 6 mm trimmer capacitor variable capacity ceramic electronic capacitor kit 5/10/20/30/40/60/70/120P 
-
-	BOJACK 20 Values 200 Pieces Inductors 1 uH to 4.7 mH 0.5 W Colour Ring Inductors 1/2 Watt Assortment Kit 
-
-	AUKENIEN 24 Value 600 Piece Ceramic Capacitor Set Capacitors Assortment from 10pF to 100nF Ceramic Capacitor Kit 
-
-	BOJACK 600-Piece 15 Value Ceramic Capacitor Kit (10 pF, 20 pF, 30 pF, 47 pF, 56 pF, 68 pF, 100 pF, 220 pF, 330 pF, 680 pF, 1 nF, 4.7 nF, 10 nF, 47 nF, 100 nF) 
-
-	HUAREW 10 Values 300 Pieces Ceramic Capacitor 0.1 0.15 0.22 0.33 0.47 0.68 1 2.2 4.7 10 uF / 100-10000 nF Classification Kit 
-
-	Heevhas 60 Pieces 5.08 mm 2 Pin & 3 Pin PCB Screw Terminal Block Solderable Connector 300 V 16 A for Arduino DIY Project (50 x 2 Pin, 10 x 3 Pin) 
-
-
-
-HOUSING:
-
-The PCB is designed to be housed in a
-"Circuit Board Instrument Aluminium Cool Box 40 x 50 x 80 mm DIY Electronic Project Housing".
-
-
-THE CIRCUIT:
-
-The oscillation frequency is given by L1 and C1+C2 that make up the tank circuit.
-C3 and C4 allow to add more capacitance to be added to C2 because the compenents have tolerance and the resulting capacity may fall short of the calcaluted value.
-A best practice is to have the values of C1 and in C2 in ratio of 1:10 up to 3:10.
-C6 is the coupling capacitor, it blocks the DC signal and only passes the AC signal:
-after C6 the sine wave oscillates above and below the 0V value, rather than around a particular voltage value,
-C6 filters the DC out, we have our signal.
-C7 maintains the voltage value seen at the base of the transistor.
-R1+R2 and R3 are the voltage divider, to ensure sufficient voltage difference between the transistor's base and emitter.
-The role of R4 is to control the amplifiers voltage gain.
 
 
 WARNING and DISCLAIMER: 
