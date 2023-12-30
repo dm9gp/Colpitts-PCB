@@ -10,6 +10,8 @@ and because it can be made from components that are ready available,
 it is a great tool to grasp the concept of a tank circuit and a fun soldering project too.
 Inspect one with an Oscilloscope too, for example.
 
+See it here in this video in action: https://www.youtube.com/watch?v=HrsZrhiRcEc
+
 
 GET STARTED:
 
