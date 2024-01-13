@@ -3,9 +3,9 @@ PCB for a Colpitts Oscillator in common base configuration.
 
 Open in Fritzing to view the schematics, inspect or modifiy the circuit. 
 
-There are more practical oscillators available today, if for example your are looking to make a radio transmitter.
+There are more accurate oscillators available today, if for example your are looking to make a radio transmitter.
 Nevertheless, the Colpitts Oscillator, here in common base configuration, works and produces a nice sine wave.
-Because it can be built on a Breadboard or from the PCB 
+Because it can be built on a Breadboard or with the PCB available here,
 and because it can be made from components that are ready available,
 it is a great tool to grasp the concept of a tank circuit and a fun soldering project too.
 Inspect one with an Oscilloscope too, for example.
@@ -19,7 +19,8 @@ To make the Oscillator you will need a Breadboard or
 print the PCB file (in the latest version) or have the PCB printed for you,
 the PCB file is in "Fritzing" format .fzz.
 You can open it in "Fritzing" (https://fritzing.org/) to first check it, modify it 
-and then have it printed by a PCB printing service of your choice such as AISLER (https://aisler.net/) if you wish.
+and then have it printed by a PCB printing service of your choice,
+such as AISLER (https://aisler.net/), if you wish.
 
 You will also need the componets listed below.
 	
@@ -47,32 +48,32 @@ You will need ONLY ONE SMA Antenna Connector as shown in the Schematics and Brea
 	Colpitts_Bread Board.jpg
 	Colpitts_schematic.jpg
 
-The reason you will find two SMA connectors in the .fzz Schematics and Breadboard 
+The why reason you will find two SMA connectors in the .fzz Schematics and Breadboard 
 is because the PCB is made double sided, to accept the SMA to be soldered on both sides, two had to be inluded in the drawing.
 
-By calculation, the Tank Circuit with the following values oscillates at a frequency within the HAM Radio 80m Band.:
+By calculation, the Tank Circuit oscillates at a frequency within the HAM Radio 80m Band, with the following values:
 		L = 3.3 µH 
 		C = 560 pF
 		fRes = 3.702 MHz
 
 C1 and C2 should make for the oscillation around 3.700 MHz when L1 is 3.3 µH but didn't in my first tests. I measured a frequency too close to 3.800 MHz, 
-that is the Upper band edge in Europe for the 80m HAM Radio Band, so it is not allowed and hence not of use to build a Transmitter for experimental use in Europe.
+close the upper edge for the 80m HAM Radio Band in IARU Region 1, so it is not of use to build a Transmitter for experimental use in Europe.
 
 Measuring the Ceramic Capacitors I found that they tend to have LESS capacitance than their label says.
 Hence I added C3 for additional capacity.
 With C3 68pF I obtained a nice wave form at 3.7MHz. 
-With C3 220pF I got on a different board a nice sine wave @ 3.740 MHz, also in the 80m HAM Radio Band, but just:
-the componets used have tolerance.
+With C3 220pF I got a nice sine wave @ 3.740 MHz on a different board  also in the 80m HAM Radio Band, but just:
+the components have tolerance.
 
 I left space to add C4 and C5 that can be Variable Capacitors for more precision and compliance to transmission rules.
-With C4 Variable Capacitor 0-120pF I could tune the signal between 3.63 MHz and 3.70 Mhz which is well withinin the HAM Radio 80m Band for all modes. 
+With C4 Variable Capacitor 0-120pF, I could tune the signal between 3.63 MHz and 3.70 MHz, which is well withinin the HAM Radio 80m Band for all modes. 
 With C4 100pF I measure 3.63 MHz fixed frequency, again, these parts have tolerance.
-I found that adding variable capacitors decreases the amplitude of the signal even up to 1.5V less peak-to-peak, 
-the variable capacitors dampen the signal.
+However, I found that adding variable capacitors decreases the amplitude of the signal even down to 1.5V less peak-to-peak, 
+the variable capacitors dampen the signal. I decided to leave them out for myself.
 
 What worked best for me was testing C3 by inserting it on the PCB before soldering it to the board.
 
-With this board design one is not limited to a frequency in the 80m Band.
+With this board design, one is not limited to a frequency in the 80m Band.
 By varying the values of L1 and C1 and combined value of C2+C3+C4+C5,
 other frequencies can be indeed obtained without changing other components.
 It is best practice that C1 and C2+Cn are in a ratio of 1:10 or 3:10.
@@ -101,11 +102,14 @@ The PCB is designed to be housed in a
 "Circuit Board Instrument Aluminium Cool Box 40 x 50 x 80 mm DIY Electronic Project Housing".
 
 
-POWER:
+POWER and FREQUENCY:
 
 I run the board at 9V.
 I tested the board @ 12V too.
-
+At higher voltages the frequencies of oscillation increases, with a frequency counter I measured 0.1 Mhz higher at 12V than at 9V.
+I compared the frequency reading of the same oscillator from 2 different oscillisocpes with a frequency counter.
+I found the 2 readings from the oscilloscopes consistent between each other and both ever so slightly lower than the reading from the frequency counter, 
+for example one board gave me 3.69 MHZ on the oscilloscope compared to 3.64 from the frequency counter. 50kHz difference is good enough for me here.
 
 
 THE CIRCUIT:
@@ -124,14 +128,15 @@ R1+R2 and R3 are the voltage divider, to ensure sufficient voltage difference be
 The role of R4 is to control the amplifiers voltage gain.
 
 Although I find the frequency to be stable, per their nature, Oscillators are susceptible to variations due to ambient temperature changes and heating up.
-When I touch the inductor, the amplitude of the wave increments a little.
+When I touched the inductor, the amplitude of the wave incremented every so slighlty, almost not at all, 
+I was expecting and hoping for little more change for demonstration purposes of the effect of temperature change.
 Hook it up to an Oscilloscope or Frequncy Counter and try warming the Inductor L1 (gently) to see what happens.
 
 
 
 THE VOLTAGE DIVIDER:
 
-I used for R1 100kΩ and R2 100kΩ but they could be substituted with a 200kΩ Resistor;
+I used 100kΩ for R1 and 100kΩ for R2 but they could be substituted with a 200kΩ Resistor;
 the board allows flexibilty to play with different values for the voltage divider;
 for example a total value for R1+R2 of 15kΩ with R3 5.6kΩ should work too with an R4 of 68Ω.
 
@@ -236,8 +241,7 @@ You may need a HAM Radio licence to operate this oscillator in your country
 unless your local regulations make exceptions such as: 
 	for the very low power emitted;
 	working under guidance of a licenced HAM Radio Operator.
-Please don't attach an Antenna to it unless you know what you are doing, thank you.
-Will require a filter.
+Please don't attach an Antenna to it unless you know what you are doing, thank you, it will require a filter.
 It is an electronics project that requires power, handle accordingly.
 
 
