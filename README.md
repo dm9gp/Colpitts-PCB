@@ -100,6 +100,7 @@ HOUSING:
 
 The PCB is designed to be housed in a
 "Circuit Board Instrument Aluminium Cool Box 40 x 50 x 80 mm DIY Electronic Project Housing".
+The center of the hole on the lid of casing for the SMA connector is 2 cm across and 3 cm up, see photo.
 
 
 POWER and FREQUENCY:
