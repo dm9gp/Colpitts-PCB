@@ -21,6 +21,7 @@ the PCB file is in "Fritzing" format .fzz.
 You can open it in "Fritzing" (https://fritzing.org/) to first check it, modify it 
 and then have it printed by a PCB printing service of your choice,
 such as AISLER (https://aisler.net/), if you wish.
+The file "gerber-files Colpitts 2023-12-20.zip" contains the same but in Gerber format.
 
 You will also need the componets listed below.
 	
